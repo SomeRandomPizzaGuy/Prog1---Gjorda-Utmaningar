@@ -1,0 +1,7 @@
+C:\Users\elev\source\repos\Simpel Kalkylator Edvin\Simpel Kalkylator Edvin\bin\Debug\Simpel Kalkylator Edvin.exe.config
+C:\Users\elev\source\repos\Simpel Kalkylator Edvin\Simpel Kalkylator Edvin\bin\Debug\Simpel Kalkylator Edvin.exe
+C:\Users\elev\source\repos\Simpel Kalkylator Edvin\Simpel Kalkylator Edvin\bin\Debug\Simpel Kalkylator Edvin.pdb
+C:\Users\elev\source\repos\Simpel Kalkylator Edvin\Simpel Kalkylator Edvin\obj\Debug\Simpel Kalkylator Edvin.csprojResolveAssemblyReference.cache
+C:\Users\elev\source\repos\Simpel Kalkylator Edvin\Simpel Kalkylator Edvin\obj\Debug\Simpel Kalkylator Edvin.csproj.CoreCompileInputs.cache
+C:\Users\elev\source\repos\Simpel Kalkylator Edvin\Simpel Kalkylator Edvin\obj\Debug\Simpel Kalkylator Edvin.exe
+C:\Users\elev\source\repos\Simpel Kalkylator Edvin\Simpel Kalkylator Edvin\obj\Debug\Simpel Kalkylator Edvin.pdb
