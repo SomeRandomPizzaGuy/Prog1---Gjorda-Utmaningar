@@ -1,0 +1,7 @@
+C:\Users\elev\source\repos\Meningskonverterare Edvin\Meningskonverterare Edvin\bin\Debug\Meningskonverterare Edvin.exe.config
+C:\Users\elev\source\repos\Meningskonverterare Edvin\Meningskonverterare Edvin\bin\Debug\Meningskonverterare Edvin.exe
+C:\Users\elev\source\repos\Meningskonverterare Edvin\Meningskonverterare Edvin\bin\Debug\Meningskonverterare Edvin.pdb
+C:\Users\elev\source\repos\Meningskonverterare Edvin\Meningskonverterare Edvin\obj\Debug\Meningskonverterare Edvin.csprojResolveAssemblyReference.cache
+C:\Users\elev\source\repos\Meningskonverterare Edvin\Meningskonverterare Edvin\obj\Debug\Meningskonverterare Edvin.csproj.CoreCompileInputs.cache
+C:\Users\elev\source\repos\Meningskonverterare Edvin\Meningskonverterare Edvin\obj\Debug\Meningskonverterare Edvin.exe
+C:\Users\elev\source\repos\Meningskonverterare Edvin\Meningskonverterare Edvin\obj\Debug\Meningskonverterare Edvin.pdb
