@@ -41,7 +41,7 @@ namespace Meningskonverterare_Edvin
                     {
                         // Kod som min farsa ville lägga in (Jag behövde hans hjälp för att jag var fast och han ville att prova lite kod)
                         // En if sats som koller om meningen som använderen har skrivit in är längre än 8 karaktärer
-                        // och sedan skriver ut de 2 karaktärer som kommer efter de första 8 karaktärer
+                        // och sedan skriver ut de 2 karaktärer som kommer efter de första 8 karaktärerna
                         if (inputText.Length > 8)
                         {
                             Console.Write("Efter 8 täken så är de följande två karaktärerna: ");
