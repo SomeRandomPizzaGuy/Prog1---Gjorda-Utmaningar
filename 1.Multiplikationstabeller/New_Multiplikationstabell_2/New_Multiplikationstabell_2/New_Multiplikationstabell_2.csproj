@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7443D1A4-3A51-47C8-9339-C8790A40E535}</ProjectGuid>
+    <ProjectGuid>{F7B40F4A-2CCF-4754-BAA8-6917EAE8B64A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Personregister</RootNamespace>
-    <AssemblyName>Personregister</AssemblyName>
+    <RootNamespace>New_Multiplikationstabell_2</RootNamespace>
+    <AssemblyName>New_Multiplikationstabell_2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,9 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Logik.cs" />
-    <Compile Include="Person.cs" />
-    <Compile Include="PersonRegister.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

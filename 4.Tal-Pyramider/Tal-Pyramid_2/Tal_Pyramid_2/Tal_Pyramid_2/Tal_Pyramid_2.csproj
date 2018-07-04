@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7443D1A4-3A51-47C8-9339-C8790A40E535}</ProjectGuid>
+    <ProjectGuid>{619CEBC3-D86E-4540-AA27-6C9FB68F539D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Personregister</RootNamespace>
-    <AssemblyName>Personregister</AssemblyName>
+    <RootNamespace>Tal_Pyramid_2</RootNamespace>
+    <AssemblyName>Tal_Pyramid_2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,9 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Logik.cs" />
-    <Compile Include="Person.cs" />
-    <Compile Include="PersonRegister.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
