@@ -10,10 +10,10 @@ namespace New_Kalkylator_2
     {
         static void Main(string[] args)
         {
-            int userMenuChoise = -1;
-            bool userMenuChoiseCheck = true;
+            int userMenuChoise;
+            bool userMenuChoiseCheck;
 
-            while (userMenuChoise != 4 && userMenuChoiseCheck == true)
+            do
             {
                 Console.Clear();
                 Console.WriteLine("Simpel Kalkylator");
@@ -25,33 +25,95 @@ namespace New_Kalkylator_2
 
                 userMenuChoiseCheck = int.TryParse(Console.ReadLine(), out userMenuChoise);
 
-                if (userMenuChoise == 1)
+                if (userMenuChoiseCheck)
                 {
-                    Console.WriteLine("Välkommen till 1");
-                    Console.ReadLine();
-                }
-                else if (userMenuChoise == 2)
-                {
-                    Console.WriteLine("Välkommen till 2");
-                    Console.ReadLine();
-                }
-                else if (userMenuChoise == 3)
-                {
-                    Console.WriteLine("Välkommen till 3");
-                    Console.ReadLine();
-                }
-                else if (userMenuChoise == 4)
-                {
-                    Console.WriteLine("Programmet stängs ner");
-                }
-                else
-                {
-                    Console.WriteLine("Hittade inte meny valet");
-                    Console.ReadLine();
+                    if (userMenuChoise == 1)
+                    {
+                        Addition();
+                    }
+                    else if (userMenuChoise == 2)
+                    {
+                        Subtraktion();
+                    }
+                    else if (userMenuChoise == 3)
+                    {
+                        Multiplikation();
+                    }
+                    else if (userMenuChoise == 4)
+                    {
+                        Console.WriteLine("Programmet stängs ner");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Hittade inte meny valet");
+                    }
                 }
             }
+            while (userMenuChoise != 4);
 
-            Console.WriteLine("You fumped up");
+            Console.ReadLine();
+        }
+
+        static void Addition()
+        {
+            int tal1 = -1;
+            int tal2 = -1;
+            bool talCheck1;
+            bool talCheck2;
+
+            Console.WriteLine("Addition vald");
+            Console.Write("Skriv in tal 1: ");
+
+            talCheck1 = int.TryParse(Console.ReadLine(), out tal1);
+
+            Console.Write("Skriv in tal 2: ");
+
+            talCheck2 = int.TryParse(Console.ReadLine(), out tal2);
+
+            Console.Write(tal1 + " + " + tal2 + " = ");
+            Console.WriteLine(tal1 += tal2);
+            Console.ReadLine();
+        }
+
+        static void Subtraktion()
+        {
+            int tal1 = -1;
+            int tal2 = -1;
+            bool talCheck1;
+            bool talCheck2;
+
+            Console.WriteLine("Subtraktion vald");
+            Console.Write("Skriv in tal 1: ");
+
+            talCheck1 = int.TryParse(Console.ReadLine(), out tal1);
+
+            Console.Write("Skriv in tal 2: ");
+
+            talCheck2 = int.TryParse(Console.ReadLine(), out tal2);
+
+            Console.Write(tal1 + " - " + tal2 + " = ");
+            Console.WriteLine(tal1 -= tal2);
+            Console.ReadLine();
+        }
+
+        static void Multiplikation()
+        {
+            int tal1 = -1;
+            int tal2 = -1;
+            bool talCheck1;
+            bool talCheck2;
+
+            Console.WriteLine("Multiplikation vald");
+            Console.Write("Skriv in tal 1: ");
+
+            talCheck1 = int.TryParse(Console.ReadLine(), out tal1);
+
+            Console.Write("Skriv in tal 2: ");
+
+            talCheck2 = int.TryParse(Console.ReadLine(), out tal2);
+
+            Console.Write(tal1 + " * " + tal2 + " = ");
+            Console.WriteLine(tal1 *= tal2);
             Console.ReadLine();
         }
     }
