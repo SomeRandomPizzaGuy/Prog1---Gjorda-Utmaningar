@@ -20,7 +20,9 @@ namespace Tal_Pyramid
             // en integer som får det värdet som användaren har matat in
             int pyramidTal = int.Parse(Console.ReadLine());
 
-            // en for loop som skapar pyramiden
+            //En for loop som skapar pyramiden
+            //Om i gick tills den blev lika stor som pyramidTal så skulle pyramiden
+            //bli en våning för kort, så i går tills det är en högre än pyramidTal
             for (int i = 1; i < pyramidTal + 1; i++)
             {
                 for (int j = 0; j < i; j++)
