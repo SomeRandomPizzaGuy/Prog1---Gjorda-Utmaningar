@@ -4,24 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//Made By Edvin
+//Made by Edvin
 
-namespace Tal_Pyramid_2
+namespace Tal_Pyramid_3
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args)   //Denna är en Work in progress
         {
-            //Variabler för en TryParse
             int userMainMenuChoise = -1;
             bool userMainMenuChoiseCheck;
 
             do
             {
                 Console.Clear();
-                Console.WriteLine("TalPyramid");
+                Console.WriteLine("Tal Pyramid");
                 Console.WriteLine("Skriv in 1 för att bygga en tal pyramid");
                 Console.WriteLine("Skriv in 0 för att stänga av programet");
+                Console.Write("Skriv in ditt val här: ");
 
                 userMainMenuChoiseCheck = int.TryParse(Console.ReadLine(), out userMainMenuChoise);
 
@@ -38,6 +38,7 @@ namespace Tal_Pyramid_2
                     else
                     {
                         Console.WriteLine("Hittade inte det valet");
+                        Console.Write("Tryck på enter för att fortsätta");
                         Console.ReadLine();
                     }
                 }
@@ -45,7 +46,8 @@ namespace Tal_Pyramid_2
                 {
                     userMainMenuChoise = -1;
 
-                    Console.WriteLine("Du skrev tokight, försök igen");
+                    Console.WriteLine("Du skrev tokigt, försök igen");
+                    Console.Write("Tryck på enter för att fortsätta");
                     Console.ReadLine();
                 }
             }
@@ -56,47 +58,61 @@ namespace Tal_Pyramid_2
 
         static void PyramidByggare()
         {
-            int userNumberInput;
-            bool userNumberInputCheck;
+            int userChoise;
+            bool userChoiseCheck;
 
-            Console.Write("Skriv in ett tal och så byggs det en pyramid utav det talet: ");
+            Console.WriteLine("Skriv in ett heltal och så byggs det en pyramid av det talet");
+            Console.Write("Skriv in ditt tal här: ");
 
-            userNumberInputCheck = int.TryParse(Console.ReadLine(), out userNumberInput);
+            userChoiseCheck = int.TryParse(Console.ReadLine(), out userChoise);
 
-            if (userNumberInputCheck)
+            if (userChoiseCheck)
             {
-                if (userNumberInput > 0)
+                if (userChoise > 0)
                 {
-                    for (int i = 1; i < userNumberInput + 1; i++)
+                    for (int i = 0; i < userChoise; i++)
                     {
-                        for (int j = 0; j < i; j++)
+                        for (int spaceI = (userChoise - i) - 2; spaceI >= 0; spaceI--)
                         {
-                            Console.Write(userNumberInput);
+                            Console.Write(" ");
+                        }
+
+                        for (int j = -1; j < i; j++)
+                        {
+                            Console.Write(userChoise + " ");
                         }
                         Console.WriteLine();
                     }
                 }
-                else if (userNumberInput < 0)
+                else if (userChoise < 0)
                 {
-                    for (int i = -1; i > userNumberInput - 1; i--)
+                    for (int i = 0; i > userChoise; i--)
                     {
-                        for (int j = 0; j > i; j--)
+                        //for (int spaceI = (userChoise + i) + 2; spaceI <= 0; spaceI++)
+                        //{
+                        //    Console.Write(" ");
+                        //}
+
+                        for (int j = 1; j > i; j--)
                         {
-                            Console.Write(userNumberInput);
+                            Console.Write(userChoise + " ");
                         }
                         Console.WriteLine();
                     }
+                }
+                else if (userChoise > -1 && userChoise < 1)
+                {
+                    Console.WriteLine("Kan inte bygga en pyramid av " + userChoise);
                 }
                 else
                 {
-                    Console.WriteLine("Programet kan inte bygga en pyramid av: " + userNumberInput);
+                    Console.WriteLine("Kan inte hitta det värdet");
                 }
             }
             else
             {
                 Console.WriteLine("Du skrev tokigt, försök igen");
             }
-
             Console.ReadLine();
         }
     }
